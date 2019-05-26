@@ -81,3 +81,7 @@ def won?(board)
     combo.all? {|x| board[x] == "X"} || combo.all? {|x| board[x] == "O"}
   end
 end
+
+def full?(board)
+  !board.any?{|i| i == " "}
+end
