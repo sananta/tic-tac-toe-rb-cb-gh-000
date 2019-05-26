@@ -21,3 +21,7 @@ def input_to_index(num)
   modified_num = num.to_i
   return modified_num - 1
 end
+
+def move(array, index, ch = "X")
+  array[index] = ch
+end
